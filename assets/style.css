@@ -1,6 +1,6 @@
 /* =====================================================
    BIM PRO - complete stylesheet (all pages)
-   Colors: charcoal + amber on warm white
+   Colors: navy + orange on warm white
    To change the font for the whole site, edit --site-font only.
    ===================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
@@ -25,8 +25,8 @@
   --blue:#C8610F;
   --blue-dark:#B4530A;
   --blue-soft:#F4A261;
-  --placeholder-a:#EDEAE4;
-  --placeholder-b:#F3F1ED;
+  --placeholder-a:#EDEAE1;
+  --placeholder-b:#F4F2EC;
 
   --font-display:var(--site-font);
   --font-body:var(--site-font);
@@ -81,7 +81,7 @@ a:focus-visible, button:focus-visible, label:focus-visible{
    TOP BAR
    ===================================================== */
 .util-bar{
-  background:linear-gradient(90deg,#1F2933 0%,#323F4B 100%);
+  background:linear-gradient(90deg,#14213D 0%,#1D2F5C 100%);
   color:#fff;
   font-size:16px;
   font-weight:500;
@@ -101,7 +101,7 @@ a:focus-visible, button:focus-visible, label:focus-visible{
 .util-left{display:flex; gap:8px 32px; flex-wrap:wrap;}
 .util-item{display:inline-flex; align-items:center; gap:6px;}
 .util-status{
-  background:rgba(240,181,74,0.18);
+  background:rgba(244,162,97,0.18);
   color:var(--accent-light);
   font-weight:600;
   font-size:14px;
@@ -122,7 +122,7 @@ a:focus-visible, button:focus-visible, label:focus-visible{
   position:sticky;
   top:0;
   z-index:50;
-  background:rgba(250,249,246,0.97);
+  background:rgba(250,250,248,0.97);
   backdrop-filter:blur(6px);
   border-bottom:1px solid var(--border);
 }
@@ -189,7 +189,7 @@ a:focus-visible, button:focus-visible, label:focus-visible{
   background:#fff;
   border:1px solid var(--border);
   border-radius:6px;
-  box-shadow:0 14px 28px rgba(31,41,51,0.14);
+  box-shadow:0 14px 28px rgba(20,33,61,0.14);
   opacity:0;
   visibility:hidden;
   transform:translateY(6px);
@@ -208,7 +208,7 @@ a:focus-visible, button:focus-visible, label:focus-visible{
   color:var(--ink-soft);
   border-radius:4px;
 }
-.dropdown a:hover{background:rgba(217,154,30,0.12); color:var(--ink);}
+.dropdown a:hover{background:rgba(232,117,26,0.12); color:var(--ink);}
 .dropdown a::after{display:none;}
 
 .nav-cta{
@@ -238,7 +238,7 @@ a:focus-visible, button:focus-visible, label:focus-visible{
     background:#fff;
     border:1px solid var(--border);
     border-radius:999px;
-    box-shadow:0 6px 18px rgba(31,41,51,0.08);
+    box-shadow:0 6px 18px rgba(20,33,61,0.08);
   }
   .nav-links > li > a{
     display:inline-flex;
@@ -254,13 +254,13 @@ a:focus-visible, button:focus-visible, label:focus-visible{
   .nav-links > li > a::after{display:none;}
   .nav-links > li > a:hover,
   .nav-links > li.has-dropdown:hover > a{
-    background:rgba(217,154,30,0.16);
+    background:rgba(232,117,26,0.16);
     color:var(--ink);
   }
   .nav-links > li > a[aria-current="page"]{
     background:var(--accent);
     color:var(--ink);
-    box-shadow:0 4px 12px rgba(217,154,30,0.40);
+    box-shadow:0 4px 12px rgba(232,117,26,0.40);
   }
 
   .has-dropdown > a::before{content:none;}
@@ -287,7 +287,7 @@ a:focus-visible, button:focus-visible, label:focus-visible{
     left:0;
     border-radius:16px;
     padding:10px;
-    box-shadow:0 18px 40px rgba(31,41,51,0.16);
+    box-shadow:0 18px 40px rgba(20,33,61,0.16);
   }
   .dropdown::before{
     content:"";
@@ -323,7 +323,7 @@ a:focus-visible, button:focus-visible, label:focus-visible{
     max-height:0;
     overflow:hidden;
     border-bottom:1px solid var(--border);
-    box-shadow:0 14px 28px rgba(31,41,51,0.1);
+    box-shadow:0 14px 28px rgba(20,33,61,0.1);
     transition:max-height 0.25s ease;
   }
   .nav-links a{padding:16px 28px; display:block;}
@@ -358,7 +358,7 @@ section{padding:28px 0;}
   border:1px solid var(--border);
   border-radius:16px;
   padding:30px 40px 36px;
-  box-shadow:0 10px 28px rgba(31,41,51,0.06);
+  box-shadow:0 10px 28px rgba(20,33,61,0.06);
   overflow:hidden;
 }
 .panel::before{
@@ -371,7 +371,7 @@ section{padding:28px 0;}
 
 .sec-tag{
   display:inline-block;
-  background:rgba(217,154,30,0.16);
+  background:rgba(232,117,26,0.16);
   color:var(--accent-text);
   font-size:14px;
   font-weight:600;
@@ -385,7 +385,7 @@ section{padding:28px 0;}
   line-height:1.2;
   margin:0 0 12px;
   color:var(--ink);           /* fallback */
-  background:linear-gradient(90deg,#1F2933 0%,#3E4C59 50%,#B77D0E 100%);
+  background:linear-gradient(90deg,#14213D 0%,#2B3F73 50%,#C25E0A 100%);
   -webkit-background-clip:text;
   background-clip:text;
   -webkit-text-fill-color:transparent;
@@ -400,7 +400,7 @@ section{padding:28px 0;}
   width:52px;
   height:52px;
   border-radius:13px;
-  background:linear-gradient(135deg,#1F2933,#3E4C59);
+  background:linear-gradient(135deg,#14213D,#2B3F73);
   color:var(--accent-light);
   display:flex;
   align-items:center;
@@ -429,8 +429,8 @@ section{padding:28px 0;}
   border:1px solid var(--border);
   border-radius:12px;
   overflow:hidden;
-  background:#1F2933;
-  box-shadow:0 18px 32px rgba(31,41,51,0.12);
+  background:#14213D;
+  box-shadow:0 18px 32px rgba(20,33,61,0.12);
 }
 .hero-art-placeholder{display:none;}
 .hero-art-captions{display:none !important;}
@@ -541,7 +541,7 @@ section{padding:28px 0;}
 .welcome-point:hover{
   transform:translateY(-3px);
   border-color:var(--accent);
-  box-shadow:0 10px 22px rgba(31,41,51,0.08);
+  box-shadow:0 10px 22px rgba(20,33,61,0.08);
 }
 .welcome-point h3{font-size:20px; margin:0 0 4px; display:flex; align-items:center; gap:8px;}
 .wp-num{
@@ -551,7 +551,7 @@ section{padding:28px 0;}
   width:26px;
   height:26px;
   border-radius:50%;
-  background:rgba(217,154,30,0.20);
+  background:rgba(232,117,26,0.20);
   color:var(--accent-text);
   font-size:14px;
   font-weight:700;
@@ -565,7 +565,7 @@ section{padding:28px 0;}
   display:flex;
   align-items:flex-start;
   gap:18px;
-  background:linear-gradient(135deg,rgba(217,154,30,0.10),rgba(244,242,236,0.6));
+  background:linear-gradient(135deg,rgba(232,117,26,0.10),rgba(244,242,236,0.6));
   border:1px solid var(--border);
   border-left:5px solid var(--accent);
   border-radius:12px;
@@ -587,7 +587,7 @@ section{padding:28px 0;}
 .adv-card:hover{
   transform:translateY(-3px);
   border-color:var(--accent);
-  box-shadow:0 10px 22px rgba(31,41,51,0.08);
+  box-shadow:0 10px 22px rgba(20,33,61,0.08);
 }
 .adv-card .wp-icon{margin-bottom:14px;}
 .adv-card h4{font-size:19px; line-height:1.3; margin:0 0 8px;}
@@ -610,13 +610,13 @@ section{padding:28px 0;}
   border-radius:14px;
   overflow:hidden;
   text-decoration:none;
-  box-shadow:0 2px 8px rgba(31,41,51,0.05);
+  box-shadow:0 2px 8px rgba(20,33,61,0.05);
   transition:transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 .course-row:hover{
   transform:translateY(-3px);
   border-color:var(--accent);
-  box-shadow:0 14px 30px rgba(31,41,51,0.12);
+  box-shadow:0 14px 30px rgba(20,33,61,0.12);
 }
 .course-body{
   padding:24px 26px;
@@ -641,7 +641,7 @@ section{padding:28px 0;}
   align-items:center;
   padding:10px 22px;
   border-radius:999px;
-  background:rgba(217,154,30,0.18);
+  background:rgba(232,117,26,0.18);
   color:var(--accent-text);
   font-size:16px;
   font-weight:700;
@@ -652,7 +652,7 @@ section{padding:28px 0;}
 .course-img{
   position:relative;
   min-height:260px;
-  background:linear-gradient(135deg,#323F4B,#1F2933);
+  background:linear-gradient(135deg,#1D2F5C,#14213D);
   display:flex;
   align-items:center;
   justify-content:center;
@@ -699,7 +699,7 @@ section{padding:28px 0;}
 
 .dim-divider{padding-top:18px;}
 .dim-divider .wrap{display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:18px;}
-.dim-line{height:1px; background:linear-gradient(90deg,transparent,rgba(31,41,51,0.18),transparent);}
+.dim-line{height:1px; background:linear-gradient(90deg,transparent,rgba(20,33,61,0.18),transparent);}
 .dim-label{
   font-size:14px;
   font-weight:600;
@@ -715,8 +715,8 @@ section{padding:28px 0;}
   font-size:14px;
   font-weight:500;
   color:var(--accent-text);
-  border:1px solid rgba(217,154,30,0.45);
-  background:rgba(217,154,30,0.10);
+  border:1px solid rgba(232,117,26,0.45);
+  background:rgba(232,117,26,0.10);
   padding:6px 12px;
   border-radius:var(--radius);
 }
@@ -733,7 +733,7 @@ section{padding:28px 0;}
   display:block;
   position:relative;
   overflow:hidden;
-  box-shadow:0 2px 8px rgba(31,41,51,0.05);
+  box-shadow:0 2px 8px rgba(20,33,61,0.05);
 }
 .course-index-card:before{
   content:"";
@@ -775,7 +775,7 @@ section{padding:28px 0;}
   border:1px solid var(--border);
   border-radius:var(--radius);
   padding:24px 26px;
-  box-shadow:0 2px 8px rgba(31,41,51,0.05);
+  box-shadow:0 2px 8px rgba(20,33,61,0.05);
 }
 .hours-table{width:100%; border-collapse:collapse; font-size:16px;}
 .hours-table td{padding:8px 0; border-bottom:1px dashed var(--border);}
@@ -858,11 +858,11 @@ footer{
   .footer-links{width:100%; justify-content:space-between; gap:32px;}
   .nowrap{white-space:normal;}
 }
+
+
 /* =====================================================
    LIGHTER HIGHLIGHTS: Home pill + Book a Free Call
    ===================================================== */
-
-/* Current page (Home): soft tint, no heavy shadow */
 @media (min-width: 821px) {
   .nav-links > li > a[aria-current="page"] {
     background: rgba(232, 117, 26, 0.14);
@@ -870,8 +870,6 @@ footer{
     box-shadow: none;
   }
 }
-
-/* Book a Free Call: light button with an orange outline */
 .nav-cta {
   background: #FFF4EA;
   color: var(--accent-text);
@@ -884,7 +882,7 @@ footer{
 }
 
 /* =====================================================
-   BIGGER SECTION TAGS + BIGGER LOGO
+   BIGGER SECTION TAGS + LOGOS
    ===================================================== */
 .sec-tag{
   font-size: 18px;
@@ -892,13 +890,166 @@ footer{
   padding: 7px 18px;
   margin-bottom: 14px;
 }
-
-.brand img{ height: 92px !important; width: auto !important; }
+.brand img{ height: 78px !important; width: auto !important; }       /* wide header logo */
 .footer-brand img{ height: 110px !important; width: auto !important; }
 
+@media (max-width: 1100px) and (min-width: 821px){
+  .brand img{ height: 46px !important; }
+  .nav-row{ gap: 20px; }
+  .nav-links > li > a{ padding: 10px 14px; }
+  .nav-cta{ padding: 10px 16px; font-size: 15px; }
+}
 @media (max-width: 820px){
-  .brand img{ height: 70px !important; }
+  .brand img{ height: 52px !important; }
 }
 @media (max-width: 720px){
   .footer-brand img{ height: 90px !important; }
+}
+
+/* =====================================================
+   INNER PAGES: course pages, courses, FAQ, contact
+   Paste this at the very bottom of assets/style.css
+   ===================================================== */
+
+/* ----- Page banner ----- */
+.page-banner{
+  padding: 40px 0 28px;
+  border-bottom: none;
+  background: transparent;
+}
+.page-banner .breadcrumb{ font-size: 15px; margin-bottom: 14px; color: var(--ink-soft); }
+.page-banner .breadcrumb a{ color: var(--accent-text); text-decoration: none; font-weight: 600; }
+.page-banner .breadcrumb a:hover{ text-decoration: underline; }
+.page-banner h1{
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 4px 0 12px;
+  color: var(--ink);
+  background: linear-gradient(90deg, var(--ink) 0%, #2B3F73 50%, var(--accent-dark) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.page-banner h1 .sub{
+  display: block;
+  margin-top: 6px;
+  font-size: 0.5em;
+  font-weight: 500;
+  color: var(--ink-soft);
+  -webkit-text-fill-color: var(--ink-soft);
+}
+.page-banner .lede{ font-size: 19px; color: var(--body); margin: 0; max-width: 900px; }
+
+.course-detail{ padding: 12px 0 28px; }
+
+/* ----- Course pages: tools and standards ----- */
+.tools-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 40px;
+  margin-top: 8px;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+}
+.mini-title{
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+  margin: 0 0 12px;
+}
+.chip-row{ display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* Small chip: logo (if the file exists) + name */
+.tool-chip{
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 0 16px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--ink);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.tool-chip:hover{ border-color: var(--accent); box-shadow: 0 4px 12px rgba(20,33,61,0.08); }
+.tool-chip img{ display: none; height: 24px; width: auto; max-width: 96px; object-fit: contain; }
+.tool-chip img.ok{ display: block; }
+
+.course-detail .btn-row{ margin-top: 30px; }
+.tm-note{
+  margin: 26px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #7B8794;
+  max-width: none;
+}
+
+/* ----- Courses page: module label inside the card title ----- */
+.course-head h3 .mod{
+  display: block;
+  margin-top: 2px;
+  font-size: 0.72em;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+/* ----- FAQ ----- */
+.faq-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 56px;
+}
+.faq-item{ margin: 0; padding: 22px 0; border-bottom: 1px solid var(--border); }
+.faq-item:last-child{ border-bottom: none; }
+.faq-item h3{ font-size: 19px; line-height: 1.35; margin: 0 0 8px; }
+.faq-item p{ margin: 0; font-size: 16.5px; }
+
+/* ----- Contact ----- */
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 22px;
+  align-items: start;
+}
+.contact-grid .panel{ padding-top: 32px; }
+.info-icon{ color: var(--accent-text); }
+.info-row p{ margin: 0 0 4px; font-size: 17px; }
+.info-row .info-link{ margin-top: 8px; }
+.info-row h4{ font-size: 15px; }
+.form-wrap{ margin-top: 22px; }
+.form-intro{ margin: 0 0 18px; font-size: 16.5px; }
+.form-frame{
+  display: block;
+  width: 100%;
+  max-width: 860px;
+  min-height: 900px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 900px){
+  .tools-grid, .faq-grid, .contact-grid{ grid-template-columns: 1fr; }
+  .faq-grid{ gap: 0; }
+}
+
+/* ----- Header spacing: keep logo and button away from the screen edges ----- */
+.nav-row{ padding-left: 32px; padding-right: 32px; }
+@media (max-width: 720px){
+  .nav-row{ padding-left: 20px; padding-right: 20px; }
+}
+
+/* FAQ: no line under the last row */
+@media (min-width: 901px){
+  .faq-item:nth-last-child(-n+2){ border-bottom: none; }
 }
