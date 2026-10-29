@@ -5,13 +5,31 @@
     <lastmod>2026-10-29</lastmod>
   </url>
   <url>
-    <loc>https://bimprodesign.in/contact.html</loc>
-    <lastmod>2026-10-29</lastmod>
-  </url>
-  <!-- Add every other page of your site below, one <url> block each. Example:
-  <url>
     <loc>https://bimprodesign.in/courses.html</loc>
     <lastmod>2026-10-29</lastmod>
   </url>
-  -->
+  <url>
+    <loc>https://bimprodesign.in/course-master.html</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://bimprodesign.in/course-hvac.html</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://bimprodesign.in/course-electrical.html</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://bimprodesign.in/course-fire-phe.html</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://bimprodesign.in/faq.html</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://bimprodesign.in/contact.html</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
 </urlset>
