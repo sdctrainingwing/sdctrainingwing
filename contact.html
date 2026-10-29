@@ -15,41 +15,52 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            color: #111;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
         }
         .contact-section {
             display: flex;
             flex-wrap: wrap;
-            gap: 40px;
-            margin-top: 30px;
+            gap: 50px;
         }
         .contact-info {
             flex: 1;
             min-width: 300px;
         }
         .map-container {
-            flex: 1;
+            flex: 1.2;
             min-width: 300px;
         }
-        .map-box {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #222;
         }
-        .map-box iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
+        p {
+            margin-bottom: 25px;
+            font-size: 1rem;
+            color: #444;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .btn-directions {
             display: inline-block;
-            margin-top: 15px;
+            margin-bottom: 30px;
             padding: 12px 24px;
             background-color: #1a73e8;
             color: white;
@@ -61,16 +72,48 @@
         }
         .btn-directions:hover {
             background-color: #1557b0;
+            text-decoration: none;
         }
         .hours-list {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         .hours-list li {
             display: flex;
             justify-content: space-between;
-            max-width: 250px;
-            margin-bottom: 5px;
+            max-width: 280px;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 4px;
+        }
+        .map-box {
+            position: relative;
+            padding-bottom: 65%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+            background-color: #e5e3df;
+        }
+        /* This ensures your custom map scales perfectly to fill the screen dimensions */
+        .map-box iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+            border: 0;
+        }
+        @media (max-width: 768px) {
+            .contact-section {
+                flex-direction: column;
+            }
+            .map-box {
+                padding-bottom: 75%;
+            }
         }
     </style>
 </head>
@@ -78,10 +121,9 @@
 
     <div class="container">
         <h1>Visit our institute in Mehdipatnam</h1>
-        <p>Book a free counseling call, or drop by during working hours.</p>
+        <p class="subtitle">Book a free counseling call, or drop by during working hours.</p>
 
         <div class="contact-section">
-            <!-- Left Side: Contact Information -->
             <div class="contact-info">
                 <h3>Address</h3>
                 <p>
@@ -89,36 +131,30 @@
                     Mehdipatnam, Hyderabad, Telangana 500008
                 </p>
 
-                <!-- Upgraded Get Directions Button -->
                 <a class="btn-directions" href="https://google.com" target="_blank">
                     Get Directions →
                 </a>
 
                 <h3>Phone / WhatsApp</h3>
-                <p>Call or WhatsApp us at: <a href="tel:+919963987943">9963987943</a> / <a href="tel:+918886084473">8886084473</a></p>
+                <p>Call or WhatsApp us at: <br><a href="tel:+919963987943">9963987943</a> / <a href="tel:+918886084473">8886084473</a></p>
 
                 <h3>Hours</h3>
                 <ul class="hours-list">
-                    <li><span>Monday</span> <span>10 am – 8 pm</span></li>
-                    <li><span>Tuesday</span> <span>10 am – 8 pm</span></li>
-                    <li><span>Wednesday</span> <span>10 am – 8 pm</span></li>
-                    <li><span>Thursday</span> <span>10 am – 8 pm</span></li>
-                    <li><span>Friday</span> <span>3 pm – 8 pm</span></li>
-                    <li><span>Saturday</span> <span>10 am – 8 pm</span></li>
-                    <li><span>Sunday</span> <span>Closed</span></li>
+                    <li><strong>Monday</strong> <span>10 am – 8 pm</span></li>
+                    <li><strong>Tuesday</strong> <span>10 am – 8 pm</span></li>
+                    <li><strong>Wednesday</strong> <span>10 am – 8 pm</span></li>
+                    <li><strong>Thursday</strong> <span>10 am – 8 pm</span></li>
+                    <li><strong>Friday</strong> <span>3 pm – 8 pm</span></li>
+                    <li><strong>Saturday</strong> <span>10 am – 8 pm</span></li>
+                    <li><strong>Sunday</strong> <span>Closed</span></li>
                 </ul>
             </div>
 
-            <!-- Right Side: Responsive Google Maps Embed -->
             <div class="map-container">
                 <h3>Location Map</h3>
                 <div class="map-box">
-                   <iframe 
-    src="https://google.com" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+                    <!-- YOUR OFFICIAL GOOGLE MAPS EMBED CODE PLACED HERE -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d294.9286942301075!2d78.43123334800369!3d17.39163496685913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978ade515e1b%3A0x98787eaaa1aca8b6!2sBIM%20PRO%20Design%20%26%20Engineering%20Training%20Institute!5e1!3m2!1sen!2sin!4v1793256483554!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
             </div>
         </div>
